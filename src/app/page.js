@@ -1,3 +1,4 @@
+import Link from "next/link";
 
 export const metadata = {
   title: "Home - Learning Starts Here",
@@ -25,6 +26,7 @@ export default function Home() {
         </h1>
         <p>
           Accelerate your journey with real-world assignments and modern tech.
+          <Link href="/homework">GO TO HOMEWORK</Link>
         </p>
       </section>
     </main>
