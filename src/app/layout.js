@@ -1,11 +1,25 @@
 import { Suspense } from "react";
 import "./globals.css";
-import { Inter } from "next/font/google";
+import { DM_Sans, Inter, Manrope } from "next/font/google";
+import Navbar from "./components/Navbar/Navbar";
 
 const inter = Inter({
   subsets: ["latin"],
   display: "swap",
   variable: "--font-inter",
+});
+
+const manrope = Manrope({
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-manrope",
+});
+
+const dmSans = DM_Sans({
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-dm-sans",
+  weight: ["400", "500", "600", "700"], // Include weights you may use
 });
 
 export const metadata = {
@@ -40,9 +54,10 @@ export const metadata = {
 
 export default function RootLayout({ children, modals }) {
   return (
-    <html lang="en" className={inter.variable}>
+    <html lang="en" className={`${inter.variable} ${manrope.variable} ${dmSans.variable}`}>
       <head />
       <body>
+        <Navbar />
         <Suspense fallback={<div className="p-4 text-center">Loading...</div>}>
           {children}
         </Suspense>
