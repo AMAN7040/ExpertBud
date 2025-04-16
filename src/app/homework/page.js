@@ -1,4 +1,5 @@
 import HeroSection from "../components/Homework/Section-1/HeroSection";
+import DetailsSection from "../components/Homework/Section-2/DetailsSection";
 
 export const metadata = {
   title: "Homework Process",
@@ -9,6 +10,7 @@ export default function HomeworkPage() {
   return (
     <>
       <HeroSection />
+      <DetailsSection/>
     </>
   );
 }
