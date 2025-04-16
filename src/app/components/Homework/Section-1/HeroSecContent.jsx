@@ -6,7 +6,7 @@ import Subsection_4 from "./Subsection_4";
 
 const HeroSecContent = () => {
   return (
-    <div className="h-[60vh] md:h-[609px] ml-2 sm:ml-5 md:ml-12 lg:ml:27 xl:ml-40 space-y-7">
+    <div className="h-[60vh] md:h-[609px] ml-2 sm:ml-5 md:ml-12 lg:ml:27 space-y-7">
       <Subsection_1 />
       <Subsection_2 />
       <Subsection_3 />
