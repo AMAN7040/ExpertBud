@@ -13,7 +13,7 @@ export const metadata = {
 
 export default function Layout({ children }) {
   return (
-    <main className="relative bg-[#F5F3EF] top-17.5 overflow-y-auto overflow-x-hidden">
+    <main className="relative bg-[#F5F3EF] top-17.5 overflow-y-auto space-y-10 md:space-y-20 overflow-x-hidden">
       {children}
     </main>
   );
