@@ -5,7 +5,7 @@ import React from "react";
 const Subsection_2 = () => {
   return (
     <div className="w-full space-y-4 md:space-y-5 ">
-      <div className="w-full h-32 md:h-37 border border-[#E1D5C9] rounded-[16px] bg-white p-5">
+      <div className="w-full h-[clamp(80px,10vh,128px)] md:h-37 border border-[#E1D5C9] rounded-[16px] bg-white p-5">
         <p className="font-normal font-dm-sans text-[clamp(10px,3.5vw,18px)] leading-6 text-[#6B7B93]">
           Describe your project briefly
         </p>
